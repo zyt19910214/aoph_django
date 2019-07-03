@@ -1,0 +1,117 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Jun  5 01:34:38 2019] ***
+compiled with version: 7.4.0 on 04 June 2019 17:22:58
+os: Linux-4.18.0-21-generic #22~18.04.1-Ubuntu SMP Thu May 16 15:07:19 UTC 2019
+nodename: zyt-System-Product-Name
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/zyt/aoph_project/wx/wxH/vipMangementSystem
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zyt/aoph_project/wx/wxH/vipMangementSystem
+your processes number limit is 47368
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Nov 27 2018, 23:36:35)  [GCC 7.3.0]
+Python main interpreter initialized at 0x55dc992fa020
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55dc992fa020 pid: 30261 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 30261)
+spawned uWSGI worker 1 (pid: 30263, cores: 2)
+spawned uWSGI worker 2 (pid: 30264, cores: 2)
+spawned uWSGI worker 3 (pid: 30265, cores: 2)
+spawned uWSGI worker 4 (pid: 30267, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Jun  5 22:39:44 2019] ***
+compiled with version: 7.4.0 on 04 June 2019 17:22:58
+os: Linux-4.18.0-21-generic #22~18.04.1-Ubuntu SMP Thu May 16 15:07:19 UTC 2019
+nodename: zyt-System-Product-Name
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/zyt/aoph_project/wx/wxH/vipMangementSystem
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zyt/aoph_project/wx/wxH/vipMangementSystem
+your processes number limit is 47366
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Nov 27 2018, 23:36:35)  [GCC 7.3.0]
+Python main interpreter initialized at 0x5583681a3020
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5583681a3020 pid: 3399 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3399)
+spawned uWSGI worker 1 (pid: 3401, cores: 2)
+spawned uWSGI worker 2 (pid: 3402, cores: 2)
+spawned uWSGI worker 3 (pid: 3403, cores: 2)
+spawned uWSGI worker 4 (pid: 3404, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun 10 22:41:45 2019] ***
+compiled with version: 7.4.0 on 04 June 2019 17:22:58
+os: Linux-4.18.0-21-generic #22~18.04.1-Ubuntu SMP Thu May 16 15:07:19 UTC 2019
+nodename: zyt-System-Product-Name
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /usr/local/nginx/html
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /mothanty/vipMangementSystem
+your processes number limit is 47368
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15+ (default, Nov 27 2018, 23:36:35)  [GCC 7.3.0]
+Python main interpreter initialized at 0x560268054f10
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x560268054f10 pid: 28232 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28232)
+spawned uWSGI worker 1 (pid: 28234, cores: 2)
+spawned uWSGI worker 2 (pid: 28235, cores: 2)
+spawned uWSGI worker 3 (pid: 28236, cores: 2)
+spawned uWSGI worker 4 (pid: 28237, cores: 2)
