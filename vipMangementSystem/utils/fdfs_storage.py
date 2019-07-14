@@ -36,6 +36,7 @@ class FasfDFSStorage(Storage):
         :return: 保存到数据库中的FastDFS的文件名
         """
         client = Fdfs_client(self.client_conf)
+
         ret = client.upload_by_filename(content)
         if ret.get("Status") != "Upload successed.":
             logger.error("upload file failed！！！")

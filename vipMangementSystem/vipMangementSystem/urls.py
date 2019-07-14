@@ -41,6 +41,12 @@ from vms.views import add_ad as views_add_ad
 from vms.views import list_ad as views_list_ad
 from vms.views import get_person_love_top as views_get_person_love_top
 from vms.views import wx_List_Good as views_wx_listgood
+from vms.views import wx_list_type as views_wx_listype
+from vms.views import wx_good_detail as views_wx_good_detail
+from vms.views import wx_is_love as views_wx_is_love
+from vms.views import wx_add_love as views_wx_add_love
+from vms.views import wx_get_love_list as views_wx_get_love_list
+from vms.views import wx_del_love as views_wx_del_love
 
 urlpatterns = [
 
@@ -72,7 +78,15 @@ urlpatterns = [
     url(r'^getPersonLoveTop/$', views_get_person_love_top),
 
 
-    url(r'^wxlistGood/$', views_wx_listgood)
+    url(r'^wxlistGood/$', views_wx_listgood),
+    url(r'^wxlistType/$', views_wx_listype),
+    url(r'^wxGoodDetail/$', views_wx_good_detail),
+    url(r'^wxisNotRepeteToLove/$', views_wx_is_love),
+    url(r'^wxaddLove/$', views_wx_add_love),
+    url(r'^wxgetloveList/$', views_wx_get_love_list),
+    url(r'^wxdellove/$', views_wx_del_love)
+
+
 
 
 

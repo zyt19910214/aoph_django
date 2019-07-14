@@ -723,6 +723,8 @@ def upload_image(req):
         try:
             dfs = FileSystemStorage()
             myfile = req.FILES.get('file')
+            print(req.FILES)
+            print(myfile)
             rname = str(uuid.uuid1()) + '.' + myfile.name.split('.')[-1]
             filename = dfs.save(os.getcwd() + '/static/images/' + rname, myfile)
             print("filename:" , filename)
@@ -767,14 +769,235 @@ def upload_image(req):
 
 # wx接口
 def wx_List_Good(req):
-    db = Mysql()
+    """
+    微信小程序获取商品列表
+    :param req:
+    :return:
+    """
+
+    post_dic = req.POST
+    logger.debug("微信小程序获取商品列表传入参数：" + str(post_dic))
+
     sql = "SELECT id,name,good_category_id as categoryId,price as minPrice,origin_price as originalPrice,status as statusStr,img_url as pic FROM good where status=1"
+    name_like = post_dic['nameLike']
+    typeId = post_dic['categoryId']
+    pageSize = int(post_dic['pageSize'])
+    page = int(post_dic['page'])
+
+    if name_like:
+        sql  = sql+ ' AND name like %%s% '%name_like
+    else:
+        pass
+
+    if typeId:
+        sql = sql + ' AND good_category_id = %s'%typeId
+    else:
+        pass
+    print(sql)
+    db = Mysql()
+
     result = db.getAll(sql)
     # print(list(result))
+    result_list  = list(result)[(page - 1) * pageSize:page * pageSize]
+    resp = ''
+
+    if result_list:
+        resp = {
+            "code": 0
+            , "msg": "success"
+            , "data": result_list
+        }
+    else:
+        resp = {
+            "code": 700
+            , "msg": "success,no data"
+            , "data": []
+        }
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+
+
+def wx_good_detail(req):
+    """
+
+    微信小程序获取商品详情
+    :param req:
+    :return:
+    """
+    post_dic = req.POST
+    logger.debug("微信小程序获取商品详情传入参数：" + str(post_dic))
+    sql = "SELECT * FROM good where id = %s;"%post_dic['id']
+    db = Mysql()
+    result = db.getOne(sql)
+    # print(result)
+    images_str = ""
+    info_str = ""
+    print(result['img_urls'])
+    if result['img_urls'] != '' :
+        images = result['img_urls'].split(',')
+
+        if images:
+            for img in images:
+                images_str = images_str + "<p><img src=\"%s\" style=\"\" title=\"\"/></p>"%img
+        else:
+            images_str = ""
+        print(images_str)
+
+    good_info = result['good_info']
+    if not good_info:
+        info_str = "品质消费，好而不贵。"
+    else:
+        info_str = good_info
+    resp = {
+        "code": 0
+        , "msg": "success"
+        , "data": {
+            "content":"<p><span style=\"color: rgb(102, 102, 102); font-family: Arial, &quot;Microsoft YaHei&quot;, SimSun; font-size: 12px; margin:10px 10px 10px 10px;background-color: rgb(255, 255, 255);\">%s</span></p>"%info_str+images_str,
+            "basicInfo": {
+
+                "id": result['id'],
+                "name":result['name'],
+                "minPrice": result['price'],
+                "originalPrice": result['origin_price'],
+                "pic": result['img_url'],
+                "categoryId": result['good_category_id'],
+                "statusStr": result['status']
+            }
+        }
+    }
+    db.dispose()
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+
+
+def wx_list_type(req):
+    """
+    微信小程序获取全部分类
+    :param req:
+    :return:
+    """
+    sql = "SELECT * FROM good_category ORDER BY `sort`;"
+    db = Mysql()
+    result = db.getAll(sql)
 
     resp = {
-        "code": 1
+        "code": 0
         , "msg": "success"
         , "data": list(result)
     }
+    db.dispose()
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+
+
+def wx_is_love(req):
+    """
+    微信小程序查看是否存在收藏
+    :param req:
+    :return:
+    """
+    logger.debug("微信小程序查看是否存在收藏传入参数： "+str(req.POST.copy()))
+    good_id = req.POST['id']
+    openid = req.POST['openid']
+    resp = {
+        "code": 700
+        , "msg": "fail"
+        , "data": ''
+    }
+    db = Mysql()
+    sql = "SELECT * FROM person_love WHERE good_id =  '%s' and  openid = '%s'"%(good_id,openid)
+    # print(sql)
+    result = db.getAll(sql)
+    logger.debug(result)
+    if not result:
+        resp = {
+            "code": 0
+            , "msg": "success"
+            , "data": ''
+        }
+    else:
+        resp = {
+            "code": 400
+            , "msg": "success"
+            , "data": ''
+        }
+    db.dispose()
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+
+
+def wx_add_love(req):
+    """
+    微信小程序添加收藏
+    :param req:
+    :return:
+    """
+
+    good_id = req.POST['id']
+    openid = req.POST['openid']
+
+    db = Mysql()
+    sql = "INSERT INTO person_love(`good_id`,`openid`,`add_time`)VALUES(%s,'%s',now())" % (good_id, openid)
+    # print(sql)
+    result = db.insertOne(sql)
+    logger.debug(result)
+    if int(result) > 0:
+
+        resp = {
+            "code": 1
+            , "msg": "success"
+            , "data": ''
+        }
+    else:
+        resp = {
+            "code": 400
+            , "msg": "fail"
+            , "data": ''
+        }
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+
+
+def wx_get_love_list(req):
+    """
+    微信小程序获取收藏列表
+    :param req:
+    :return:
+    """
+    openid = req.POST['openid']
+
+    db = Mysql()
+    sql = "SELECT `id`,`name`,`good_category_id`,`price`,`origin_price`,`status`,`img_url`,`good_info` FROM good WHERE id IN (SELECT good_id FROM person_love WHERE openid = '%s')" % openid
+    print(sql)
+    result = db.getAll(sql)
+    logger.debug(result)
+    love_list = []
+    if result:
+        love_list = list(result)
+    else:
+        pass
+    resp = {
+        "code": 0
+        , "msg": "success"
+        , "data": love_list
+    }
+
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+
+
+def wx_del_love(req):
+    """
+    微信小程序删除收藏
+    :param req:
+    :return:
+    """
+    openid = req.POST['openid']
+    good_id = req.POST['id']
+    db = Mysql()
+    sql = "delete from person_love where good_id=%s and openid = '%s' "% (good_id,openid)
+    print(sql)
+    result = db.delete(sql)
+    print(result)
+
+    resp = {
+        "code": 0
+        , "msg": "success"
+        , "data": ''
+    }
+
     return HttpResponse(json.dumps(resp), content_type="application/json")

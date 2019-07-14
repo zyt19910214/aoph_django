@@ -11,7 +11,7 @@
  Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 05/07/2019 00:16:52
+ Date: 14/07/2019 23:29:05
 */
 
 SET NAMES utf8mb4;
@@ -63,37 +63,39 @@ CREATE TABLE `good`  (
   `status` int(10) NULL DEFAULT NULL,
   `img_url` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `img_urls` varchar(20000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `good_info` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 42 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 43 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of good
 -- ----------------------------
-INSERT INTO `good` VALUES (2, '雪碧', 1, 3.0, 2.0, '2018-08-09 23:33:44', 1, NULL, NULL);
-INSERT INTO `good` VALUES (4, '凉皮', 3, 7.0, 3.5, '2018-08-09 23:34:40', 1, NULL, NULL);
-INSERT INTO `good` VALUES (5, '雪花', 2, 3.0, 2.1, '2018-08-09 23:35:01', 1, NULL, NULL);
-INSERT INTO `good` VALUES (6, '黑啤', 2, 4.0, 2.8, '2018-08-09 23:35:15', 1, NULL, NULL);
-INSERT INTO `good` VALUES (7, '牛奶', 1, 8.0, 6.0, '2018-08-09 23:35:36', 1, NULL, NULL);
-INSERT INTO `good` VALUES (9, '自制酸梅汤', 1, 8.0, 1.0, '2018-08-09 23:53:02', 1, NULL, NULL);
-INSERT INTO `good` VALUES (10, '自制柳橙汁', 1, 8.0, 1.0, '2018-08-09 23:53:15', 1, NULL, NULL);
-INSERT INTO `good` VALUES (11, '自制橙汁', 1, 8.0, 1.0, '2018-08-09 23:53:27', 1, NULL, NULL);
-INSERT INTO `good` VALUES (14, '加多宝', 1, 5.5, 4.5, '2018-08-31 01:02:50', 1, NULL, NULL);
-INSERT INTO `good` VALUES (15, '红牛', 1, 6.0, 4.8, '2018-08-22 10:29:28', 1, NULL, NULL);
-INSERT INTO `good` VALUES (16, '茶π', 1, 6.0, 3.8, '2018-08-22 10:48:00', 1, NULL, NULL);
-INSERT INTO `good` VALUES (17, '阿萨姆', 1, 5.0, 3.0, '2018-09-02 23:26:56', 1, NULL, NULL);
-INSERT INTO `good` VALUES (19, '15', 2, 12.0, 10.0, '2019-06-13 00:31:30', 1, NULL, NULL);
-INSERT INTO `good` VALUES (20, '12', 1, 22.0, 12.0, '2019-06-13 00:59:43', 1, NULL, NULL);
-INSERT INTO `good` VALUES (21, '22', 1, 12.0, 11.0, '2019-06-13 01:02:34', 1, NULL, NULL);
-INSERT INTO `good` VALUES (22, '223', 1, 222.0, 2.0, '2019-06-13 01:06:00', 1, NULL, NULL);
-INSERT INTO `good` VALUES (23, '2223', 1, 12.0, 1.0, '2019-06-13 01:07:24', 1, NULL, NULL);
-INSERT INTO `good` VALUES (24, '222', 1, 31.0, 1.0, '2019-06-13 01:08:11', 1, NULL, NULL);
-INSERT INTO `good` VALUES (25, '22231', 1, 22.0, 2.0, '2019-06-13 01:11:32', 1, NULL, NULL);
-INSERT INTO `good` VALUES (32, '1222222', 1, 1222.0, 111.0, '2019-06-17 23:48:52', 1, NULL, NULL);
-INSERT INTO `good` VALUES (37, '英雄联盟', 1, 200.0, 100.0, '2019-06-18 01:46:56', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fCAewPZAAHOGYy0SIw332.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fSAb8G3AAHOGYy0SIw734.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0faAWM3bAA1eBOVQX64320.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fiAI8EbAAHOGYy0SIw419.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fqATDs_AA1eBOVQX64451.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fyAMXuYAAHOGYy0SIw968.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0f6ARxYKAAHOGYy0SIw221.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gGAKc08AA1eBOVQX64592.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gOAfoLaAA1eBOVQX64294.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gWAIpswAAHOGYy0SIw349.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0geASzsKAAHOGYy0SIw029.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gqAI2Z2AA1eBOVQX64675.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gyATAClAA1eBOVQX64791.png');
-INSERT INTO `good` VALUES (38, '马甲个', 3, 111.0, 11.0, '2019-06-23 14:47:18', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0PIHGAeDNPAA1eBOVQX64786.png', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0PIHWAV83XAAHOGYy0SIw715.jpg');
-INSERT INTO `good` VALUES (39, '多多雨', 3, 100.0, 10.0, '2019-06-25 23:30:00', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPFaAZIGWAAHOGYy0SIw141.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEKAGQqUAAHOGYy0SIw457.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEWAFRlvAAHOGYy0SIw162.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEeAQ9j2AAHOGYy0SIw838.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEqAIk2uAA1eBOVQX64769.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPE2AQ1N-AA1eBOVQX64456.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPE-AZMU6AAHOGYy0SIw079.jpg');
-INSERT INTO `good` VALUES (40, '赵信', 2, 111.0, 12.0, '2019-06-26 22:37:38', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyOAHv-aAAHOGYy0SIw365.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyeAdXDVAAHOGYy0SIw134.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyqABjA6AA1eBOVQX64805.png');
-INSERT INTO `good` VALUES (41, '你好', 1, 100.0, 20.0, '2019-06-26 22:40:10', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg76AaCAQAAHOGYy0SIw122.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg8KAR0a2AA1eBOVQX64032.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg8SAXRlwAAHOGYy0SIw388.jpg');
+INSERT INTO `good` VALUES (2, '雪碧', 1, 3.0, 2.0, '2018-08-09 23:33:44', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (4, '凉皮', 3, 7.0, 3.5, '2018-08-09 23:34:40', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (5, '雪花', 2, 3.0, 2.1, '2018-08-09 23:35:01', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (6, '黑啤', 2, 4.0, 2.8, '2018-08-09 23:35:15', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (7, '牛奶', 1, 8.0, 6.0, '2018-08-09 23:35:36', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (9, '自制酸梅汤', 1, 8.0, 1.0, '2018-08-09 23:53:02', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (10, '自制柳橙汁', 1, 8.0, 1.0, '2018-08-09 23:53:15', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (11, '自制橙汁', 1, 8.0, 1.0, '2018-08-09 23:53:27', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (14, '加多宝', 1, 5.5, 4.5, '2018-08-31 01:02:50', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (15, '红牛', 1, 6.0, 4.8, '2018-08-22 10:29:28', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (16, '茶π', 1, 6.0, 3.8, '2018-08-22 10:48:00', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (17, '阿萨姆', 1, 5.0, 3.0, '2018-09-02 23:26:56', 1, '../../images/icon/noimg.png', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg8KAR0a2AA1eBOVQX64032.png', NULL);
+INSERT INTO `good` VALUES (19, '15', 2, 12.0, 10.0, '2019-06-13 00:31:30', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (20, '12', 1, 22.0, 12.0, '2019-06-13 00:59:43', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (21, '22', 1, 12.0, 11.0, '2019-06-13 01:02:34', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (22, '223', 1, 222.0, 2.0, '2019-06-13 01:06:00', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (23, '2223', 1, 12.0, 1.0, '2019-06-13 01:07:24', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (24, '222', 1, 31.0, 1.0, '2019-06-13 01:08:11', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (25, '22231', 1, 22.0, 2.0, '2019-06-13 01:11:32', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (32, '1222222', 1, 1222.0, 111.0, '2019-06-17 23:48:52', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (37, '英雄联盟', 1, 200.0, 100.0, '2019-06-18 01:46:56', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fCAewPZAAHOGYy0SIw332.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fSAb8G3AAHOGYy0SIw734.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0faAWM3bAA1eBOVQX64320.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fiAI8EbAAHOGYy0SIw419.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fqATDs_AA1eBOVQX64451.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fyAMXuYAAHOGYy0SIw968.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0f6ARxYKAAHOGYy0SIw221.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gGAKc08AA1eBOVQX64592.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gOAfoLaAA1eBOVQX64294.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gWAIpswAAHOGYy0SIw349.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0geASzsKAAHOGYy0SIw029.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gqAI2Z2AA1eBOVQX64675.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gyATAClAA1eBOVQX64791.png', 'YSL全新限量圣诞彩妆【金夜繁星限量彩妆盘】是时尚配件，更是一个收藏YSL女人所有美丽秘密的彩妆盘，拥有4色派对眼影色选：紫梅、璨金、古铜和金属玫瑰，搭配裸唇和女王艳红两款唇色，无论是优雅气质还是华丽气势都能驾驭！');
+INSERT INTO `good` VALUES (38, '马甲个', 3, 111.0, 11.0, '2019-06-23 14:47:18', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0PIHGAeDNPAA1eBOVQX64786.png', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0PIHWAV83XAAHOGYy0SIw715.jpg', NULL);
+INSERT INTO `good` VALUES (39, '美国对台军售哪些企业将被中国制裁美国对台军售，哪些企业将制裁', 3, 100.0, 10.0, '2019-06-25 23:30:00', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPFaAZIGWAAHOGYy0SIw141.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEKAGQqUAAHOGYy0SIw457.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEWAFRlvAAHOGYy0SIw162.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEeAQ9j2AAHOGYy0SIw838.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEqAIk2uAA1eBOVQX64769.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPE2AQ1N-AA1eBOVQX64456.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPE-AZMU6AAHOGYy0SIw079.jpg', 'YSL全新限量圣诞彩妆【金夜繁星限量彩妆盘】是时尚配件，更是一个收藏YSL女人所有美丽秘密的彩妆盘，拥有4色派对眼影色选：紫梅、璨金、古铜和金属玫瑰，搭配裸唇和女王艳红两款唇色，无论是优雅气质还是华丽气势都能驾驭！');
+INSERT INTO `good` VALUES (40, '赵信', 2, 111.0, 12.0, '2019-06-26 22:37:38', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyOAHv-aAAHOGYy0SIw365.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyeAdXDVAAHOGYy0SIw134.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyqABjA6AA1eBOVQX64805.png', NULL);
+INSERT INTO `good` VALUES (41, '你好', 1, 100.0, 20.0, '2019-06-26 22:40:10', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg76AaCAQAAHOGYy0SIw122.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg8KAR0a2AA1eBOVQX64032.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg8SAXRlwAAHOGYy0SIw388.jpg', NULL);
+INSERT INTO `good` VALUES (42, 'sada', 1, 100.0, 80.0, '2019-07-14 00:07:30', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0qAb2AYPAqAAHOGYy0SIw683.jpg', '', NULL);
 
 -- ----------------------------
 -- Table structure for good_category
@@ -105,7 +107,7 @@ CREATE TABLE `good_category`  (
   `sort` int(11) NULL DEFAULT NULL,
   `chart` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 30 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of good_category
@@ -114,18 +116,21 @@ INSERT INTO `good_category` VALUES (1, '饮料', 4, NULL);
 INSERT INTO `good_category` VALUES (2, '酒水', 1, NULL);
 INSERT INTO `good_category` VALUES (3, '简餐', 3, NULL);
 INSERT INTO `good_category` VALUES (4, '火锅', 2, NULL);
-INSERT INTO `good_category` VALUES (14, 'f', 11, NULL);
-
--- ----------------------------
--- Table structure for good_img
--- ----------------------------
-DROP TABLE IF EXISTS `good_img`;
-CREATE TABLE `good_img`  (
-  `id` int(11) NOT NULL,
-  `good_id` int(11) NOT NULL,
-  `img_url` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+INSERT INTO `good_category` VALUES (15, '母婴用品', 7, NULL);
+INSERT INTO `good_category` VALUES (16, '进口奶粉', 8, NULL);
+INSERT INTO `good_category` VALUES (17, '健康保健', 9, NULL);
+INSERT INTO `good_category` VALUES (18, '食品辅食', 10, NULL);
+INSERT INTO `good_category` VALUES (19, '美容护肤', 12, NULL);
+INSERT INTO `good_category` VALUES (20, '洗护日化', 13, NULL);
+INSERT INTO `good_category` VALUES (21, '家居生活', 14, NULL);
+INSERT INTO `good_category` VALUES (22, '宝宝玩具', 15, NULL);
+INSERT INTO `good_category` VALUES (23, '大牌彩妆', 16, NULL);
+INSERT INTO `good_category` VALUES (24, 'LLLL', 18, NULL);
+INSERT INTO `good_category` VALUES (25, 'LV$LV', 19, NULL);
+INSERT INTO `good_category` VALUES (26, 'LSSA', 20, NULL);
+INSERT INTO `good_category` VALUES (27, 'sOs1', 21, NULL);
+INSERT INTO `good_category` VALUES (28, 'SILAI', 22, NULL);
+INSERT INTO `good_category` VALUES (29, 'SUUIOO', 24, NULL);
 
 -- ----------------------------
 -- Table structure for manager
@@ -246,23 +251,31 @@ INSERT INTO `person` VALUES (81, '张运通', 1, '17629298189', '', '2018-09-02 
 DROP TABLE IF EXISTS `person_love`;
 CREATE TABLE `person_love`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `person_id` int(11) NULL DEFAULT NULL,
+  `openid` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `good_id` int(11) NULL DEFAULT NULL,
   `add_time` datetime(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 63 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of person_love
 -- ----------------------------
-INSERT INTO `person_love` VALUES (1, 1, 2, '2019-07-03 15:42:41');
-INSERT INTO `person_love` VALUES (2, 1, 4, '2019-07-03 15:43:06');
-INSERT INTO `person_love` VALUES (3, 2, 37, '2019-07-03 15:43:25');
-INSERT INTO `person_love` VALUES (4, 2, 4, '2019-07-03 15:56:05');
-INSERT INTO `person_love` VALUES (5, 72, 4, '2019-07-03 17:42:04');
-INSERT INTO `person_love` VALUES (6, 73, 4, '2019-07-03 17:42:25');
-INSERT INTO `person_love` VALUES (7, 74, 4, '2019-07-03 17:42:35');
-INSERT INTO `person_love` VALUES (8, 75, 37, '2019-07-03 17:42:46');
+INSERT INTO `person_love` VALUES (1, '1', 2, '2019-07-03 15:42:41');
+INSERT INTO `person_love` VALUES (4, '2', 4, '2019-07-03 15:56:05');
+INSERT INTO `person_love` VALUES (5, '72', 4, '2019-07-03 17:42:04');
+INSERT INTO `person_love` VALUES (6, '73', 4, '2019-07-03 17:42:25');
+INSERT INTO `person_love` VALUES (7, '74', 4, '2019-07-03 17:42:35');
+INSERT INTO `person_love` VALUES (8, '75', 37, '2019-07-03 17:42:46');
+INSERT INTO `person_love` VALUES (39, 'undefined', 2, '2019-07-14 22:43:18');
+INSERT INTO `person_love` VALUES (54, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 39, '2019-07-14 23:21:36');
+INSERT INTO `person_love` VALUES (55, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 2, '2019-07-14 23:26:20');
+INSERT INTO `person_love` VALUES (56, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 4, '2019-07-14 23:26:22');
+INSERT INTO `person_love` VALUES (57, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 5, '2019-07-14 23:26:25');
+INSERT INTO `person_love` VALUES (58, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 6, '2019-07-14 23:26:27');
+INSERT INTO `person_love` VALUES (59, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 7, '2019-07-14 23:26:30');
+INSERT INTO `person_love` VALUES (60, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 9, '2019-07-14 23:26:35');
+INSERT INTO `person_love` VALUES (61, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 14, '2019-07-14 23:26:39');
+INSERT INTO `person_love` VALUES (62, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 15, '2019-07-14 23:26:42');
 
 -- ----------------------------
 -- Table structure for point_detail

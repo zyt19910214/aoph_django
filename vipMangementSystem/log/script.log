@@ -781,3 +781,709 @@ Traceback (most recent call last):
   File "/mothanty/vipMangementSystem/vms/views.py", line 580, in get_person_love_top
     "data":result['info']
 TypeError: tuple indices must be integers, not unicode
+2019-07-05 15:18:03,593 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /uploadImage/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 766, in upload_image
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+UnboundLocalError: local variable 'resp' referenced before assignment
+2019-07-07 14:19:35,541 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 772, in wx_List_Good
+    logger.debug("获取商品列表传入的参数："+req.POST)
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:19:43,645 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 772, in wx_List_Good
+    logger.debug("获取商品列表传入的参数："+req.POST)
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:20:52,817 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 772, in wx_List_Good
+    logger.debug("获取商品列表传入的参数："+req.POST)
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:21:21,170 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 772, in wx_List_Good
+    logger.debug("获取商品列表传入的参数："+req.POST)
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:22:17,734 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 773, in wx_List_Good
+    logger.debug("获取商品列表传入的参数："+req.POST.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:26:53,321 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 773, in wx_List_Good
+    print(req.POST.get())
+TypeError: get() takes at least 2 arguments (1 given)
+2019-07-07 14:33:52,357 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:44:19,032 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:44:59,935 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:45:23,883 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:45:38,668 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:46:10,056 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:46:31,822 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:46:44,930 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 786, in wx_List_Good
+    , "data": list(result)[(page - 1) * pageSize:page * pageSize]
+NameError: global name 'page' is not defined
+2019-07-07 14:47:09,519 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:47:26,373 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:48:18,677 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:48:59,096 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:49:27,801 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 774, in wx_List_Good
+    logger.debug("微信小程序获取商品列表传入参数："+post_dic)
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-07 14:56:02,181 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 789, in wx_List_Good
+    sql = sql + 'AND good_category_id = "%%d%"'%typeId
+ValueError: unsupported format character '"' (0x22) at index 28
+2019-07-07 14:56:14,828 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 789, in wx_List_Good
+    sql = sql + 'AND good_category_id = "%%d%"'%typeId
+ValueError: unsupported format character '"' (0x22) at index 28
+2019-07-07 14:56:16,347 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 789, in wx_List_Good
+    sql = sql + 'AND good_category_id = "%%d%"'%typeId
+ValueError: unsupported format character '"' (0x22) at index 28
+2019-07-07 15:06:36,227 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistType/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 827, in wx_list_type
+    db = Mysql()
+NameError: global name 'Mysqlysql' is not defined
+2019-07-07 15:06:50,762 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistType/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 827, in wx_list_type
+    db = Mysql()
+NameError: global name 'Mysqlysql' is not defined
+2019-07-07 15:06:50,813 [base:get_response] [WARNING]- Not Found: /favicon.ico
+2019-07-07 15:09:06,951 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 794, in wx_List_Good
+    sql = sql + 'AND good_category_id = "%%d%"'%typeId
+ValueError: unsupported format character '"' (0x22) at index 28
+2019-07-07 15:09:07,553 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 794, in wx_List_Good
+    sql = sql + 'AND good_category_id = "%%d%"'%typeId
+ValueError: unsupported format character '"' (0x22) at index 28
+2019-07-07 15:09:08,226 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 794, in wx_List_Good
+    sql = sql + 'AND good_category_id = "%%d%"'%typeId
+ValueError: unsupported format character '"' (0x22) at index 28
+2019-07-07 15:09:43,351 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 794, in wx_List_Good
+    sql = sql + 'AND good_category_id = "%%d%"'%typeId
+ValueError: unsupported format character '"' (0x22) at index 28
+2019-07-07 15:10:35,231 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 793, in wx_List_Good
+    sql = sql + 'AND good_category_id = "%%s%"'%typeId
+ValueError: unsupported format character '"' (0x22) at index 28
+2019-07-07 15:11:18,220 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 799, in wx_List_Good
+    result = db.getAll(sql)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/DB.py", line 248, in getAll
+    count = self._cursor.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/DBUtils/SteadyDB.py", line 580, in tough_method
+    result = method(*args, **kwargs)  # try to execute
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'good_category_id = "2"\' at line 1')
+2019-07-13 15:58:10,387 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 832, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-13 15:58:20,110 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 832, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-13 15:59:34,278 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 832, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-13 16:00:23,066 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 832, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-13 16:01:16,510 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 832, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-13 16:02:49,985 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 832, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-13 16:05:34,485 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 835, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-13 16:06:00,835 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 836, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-13 16:09:18,863 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 836, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-13 16:10:03,486 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 836, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-13 16:10:12,872 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 836, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-13 16:12:37,771 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 836, in wx_good_detail
+    images = result['img_urls'].split(',')
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-07-14 06:56:25,463 [base:get_response] [WARNING]- Not Found: /wxisNotRepeteToLove/
+2019-07-14 06:56:25,504 [base:get_response] [WARNING]- Not Found: /wxaddLove/
+2019-07-14 08:26:07,167 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxisNotRepeteToLove/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 895, in wx_is_love
+    logger.debug("微信小程序查看是否存在收藏传入参数： "+req.POST.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-14 08:26:56,115 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxisNotRepeteToLove/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 895, in wx_is_love
+    logger.debug("微信小程序查看是否存在收藏传入参数： "+req.POST.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-14 08:27:43,362 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxisNotRepeteToLove/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 895, in wx_is_love
+    logger.debug("微信小程序查看是否存在收藏传入参数： "+req.POST.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-14 08:29:49,937 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxisNotRepeteToLove/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 895, in wx_is_love
+    logger.debug("微信小程序查看是否存在收藏传入参数： "+req.POST.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-14 08:30:03,950 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxisNotRepeteToLove/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 895, in wx_is_love
+    logger.debug("微信小程序查看是否存在收藏传入参数： "+req.POST.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-14 08:30:04,107 [base:get_response] [WARNING]- Not Found: /favicon.ico
+2019-07-14 09:12:37,539 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxisNotRepeteToLove/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 894, in wx_is_love
+    logger.debug("微信小程序查看是否存在收藏传入参数： "+req.POST.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-14 09:42:03,059 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxisNotRepeteToLove/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 894, in wx_is_love
+    logger.debug("微信小程序查看是否存在收藏传入参数： "+req.POST.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-14 09:42:10,064 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxisNotRepeteToLove/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 894, in wx_is_love
+    logger.debug("微信小程序查看是否存在收藏传入参数： "+req.POST.copy())
+TypeError: coercing to Unicode: need string or buffer, QueryDict found
+2019-07-14 12:07:31,698 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxgetloveList/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 979, in wx_get_love_list
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2019, 7, 3, 15, 43, 6) is not JSON serializable
+2019-07-14 12:08:35,740 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxgetloveList/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 979, in wx_get_love_list
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2019, 7, 3, 15, 43, 6) is not JSON serializable
+2019-07-14 12:09:53,628 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxgetloveList/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 980, in wx_get_love_list
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2019, 7, 3, 15, 43, 6) is not JSON serializable
+2019-07-14 12:11:43,143 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxgetloveList/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 979, in wx_get_love_list
+    print(json.dumps(resp))
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2019, 7, 3, 15, 43, 6) is not JSON serializable
+2019-07-14 12:14:49,595 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxgetloveList/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 980, in wx_get_love_list
+    print(json.dumps(resp))
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2019, 7, 3, 15, 43, 6) is not JSON serializable
+2019-07-14 12:15:48,902 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxgetloveList/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 985, in wx_get_love_list
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2019, 7, 3, 15, 43, 6) is not JSON serializable
+2019-07-14 12:23:41,379 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxgetloveList/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 967, in wx_get_love_list
+    result = db.getAll(sql)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/DB.py", line 248, in getAll
+    count = self._cursor.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/DBUtils/SteadyDB.py", line 580, in tough_method
+    result = method(*args, **kwargs)  # try to execute
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`category_id`,`price`,`origin_price`,`status`,`img_url`,`good_info` FROM good WH' at line 1")
