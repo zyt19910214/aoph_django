@@ -28,8 +28,7 @@ def list_vip_person(req):
     会员列表查询
     :param req:
     :return:
-    """
-
+    """ 
     data = req.GET.copy()
     sql = 'SELECT a.id, a.`name` AS vip_name, a.phone AS vip_phone, a.note AS vip_notes, a.sex AS vip_sex,' \
           ' sum(b.point) AS vip_person_point FROM person a LEFT JOIN point_detail b ON a.id = b.person_id and b.type =0 GROUP BY a.id ORDER BY a.id desc'
