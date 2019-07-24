@@ -1487,3 +1487,261 @@ Traceback (most recent call last):
   File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
     raise errorclass, errorvalue
 ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`category_id`,`price`,`origin_price`,`status`,`img_url`,`good_info` FROM good WH' at line 1")
+2019-07-21 03:22:26,509 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /getPersonLoveTop/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 570, in get_person_love_top
+    result = db.getAll(sql1)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/DB.py", line 248, in getAll
+    count = self._cursor.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/DBUtils/SteadyDB.py", line 580, in tough_method
+    result = method(*args, **kwargs)  # try to execute
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'dec' at line 1")
+2019-07-21 04:05:29,975 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /addGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 241, in add_good
+    sql = "INSERT INTO `good` (`name`, `good_category_id`, `price`, `uploadtime`, `status`,`origin_price`,`img_url`,`img_urls`) VALUES ('%s', '%s', '%s', now(), '%s','%s','%s','%s');"%(data['title'],data['type'],data['price'],1,data['origin_price'],data['image_url'],data['image_url2'][1:])
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'type'"
+2019-07-21 04:11:41,756 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /addGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 235, in add_good
+    sql = "INSERT INTO `good` (`name`, `good_category_id`, `price`, `uploadtime`, `status`,`img_url`,`img_urls`) VALUES ('%s', '%s', '%s', now(), '%s','%s','%s');"%(data['title'],data['type'],data['price'],1,data['image_url'],data['image_url2'][1:])
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'type'"
+2019-07-21 04:13:45,271 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /addGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 259, in add_good
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+UnboundLocalError: local variable 'resp' referenced before assignment
+2019-07-21 04:16:15,001 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /addGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 260, in add_good
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+UnboundLocalError: local variable 'resp' referenced before assignment
+2019-07-21 04:17:39,300 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /addGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 256, in add_good
+    return HttpResponse(json.dumps(resp), content_type="application/json")
+UnboundLocalError: local variable 'resp' referenced before assignment
+2019-07-21 04:19:16,217 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /addGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 235, in add_good
+    sql = "INSERT INTO `good` (`name`, `good_category_id`, `price`, `uploadtime`, `status`,`img_url`,`img_urls`) VALUES ('%s', '%s', '%s', now(), '%s','%s','%s');"%(data['title'],data['type'],data['price'],1,data['image_url'],data['image_url2'][1:])
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'type'"
+2019-07-21 04:20:39,581 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /addGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 235, in add_good
+    sql = "INSERT INTO `good` (`name`, `good_category_id`, `price`, `uploadtime`, `status`,`img_url`,`img_urls`) VALUES ('%s', '%s', '%s', now(), '%s','%s','%s');"%(data['title'],data['type'],data['price'],1,data['image_url'],data['image_url2'][1:])
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'type'"
+2019-07-23 15:43:26,982 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /onsaleGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 320, in onsale_good
+    orgin_price = req.POST.copy()['orgin_price']
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'orgin_price'"
+2019-07-23 16:05:24,560 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 835, in wx_List_Good
+    name_like = post_dic['nameLike']
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'nameLike'"
+2019-07-23 16:05:57,402 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 835, in wx_List_Good
+    name_like = post_dic['nameLike']
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'nameLike'"
+2019-07-23 16:06:38,560 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 835, in wx_List_Good
+    name_like = post_dic['nameLike']
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'nameLike'"
+2019-07-23 16:08:47,249 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 835, in wx_List_Good
+    name_like = post_dic['nameLike']
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'nameLike'"
+2019-07-23 16:09:45,995 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 835, in wx_List_Good
+    name_like = post_dic['nameLike']
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'nameLike'"
+2019-07-23 17:19:04,228 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /delonsaleGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 351, in delonsale_good
+    id_list = req.POST.copy()['checkData']
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'checkData'"
+2019-07-23 17:20:16,839 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /delonsaleGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 351, in delonsale_good
+    id_list = req.POST.copy()['checkData']
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'checkData'"
+2019-07-23 17:21:01,735 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /delonsaleGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 351, in delonsale_good
+    id_list = req.POST.copy()['checkData']
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'checkData'"
+2019-07-23 17:22:36,724 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /delonsaleGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/JWT.py", line 53, in __deco
+    return func(request, *para, **kw)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 351, in delonsale_good
+    id_list = req.POST.copy()['checkData']
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "u'checkData'"
