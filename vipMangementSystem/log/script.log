@@ -1745,3 +1745,62 @@ Traceback (most recent call last):
   File "/usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py", line 85, in __getitem__
     raise MultiValueDictKeyError(repr(key))
 MultiValueDictKeyError: "u'checkData'"
+2019-09-01 03:36:11,989 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxGoodDetail/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 942, in wx_good_detail
+    result = db.getOne(sql)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/DB.py", line 265, in getOne
+    count = self._cursor.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/DBUtils/SteadyDB.py", line 661, in tough_method
+    raise error  # reraise the original error again
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+2019-09-01 03:51:43,767 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 862, in wx_List_Good
+    sql  = sql+ ' AND name like %%s% '%name_like
+ValueError: incomplete format
+2019-09-01 03:52:06,824 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 862, in wx_List_Good
+    sql  = sql+ ' AND name like %%s% '%name_like
+ValueError: incomplete format
+2019-09-01 04:06:17,441 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 861, in wx_List_Good
+    sql  = sql+ ' AND name like %%s%' %name_like
+ValueError: incomplete format
+2019-09-01 04:13:02,057 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /wxlistGood/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mothanty/aoph_django/vipMangementSystem/vms/views.py", line 861, in wx_List_Good
+    sql  = sql + "AND UPPER(name) like BINARY CONCAT('%',UPPER(%s),'%')"%name_like
+ValueError: unsupported format character ''' (0x27) at index 37

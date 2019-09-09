@@ -858,22 +858,21 @@ def wx_List_Good(req):
     pageSize = int(post_dic['pageSize'])
     page = int(post_dic['page'])
 
-    if name_like:
-        sql  = sql+ ' AND name like %%s% '%name_like
-    else:
-        pass
-
     if typeId == '-1':
         sql = "SELECT id,name,good_category_id as categoryId,price as minPrice,origin_price as originalPrice,status as statusStr,img_url as pic FROM good where status=1 and origin_price !=0 "
     elif typeId:
         sql = sql + ' AND good_category_id = %s' % typeId
     else:
         pass
-    print(sql)
-    db = Mysql()
+    if name_like != '':
+        sql = sql + " AND UPPER(name) like UPPER('%{0}%')".format(name_like)
+    else:
+        pass
 
+    db = Mysql()
+    print(sql)
     result = db.getAll(sql)
-    # print(list(result))
+    print(list(result))
     result_list  = list(result)[(page - 1) * pageSize:page * pageSize]
     resp = ''
 

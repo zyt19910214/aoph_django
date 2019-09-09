@@ -39,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vms/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="247" column="20" lean-forward="true" selection-start-line="246" selection-start-column="20" selection-end-line="247" selection-end-column="20" />
+            <state relative-caret-position="165">
+              <caret line="858" column="32" selection-start-line="858" selection-start-column="32" selection-end-line="858" selection-end-column="32" />
               <folding>
                 <element signature="e#24#61#0" expanded="true" />
               </folding>
@@ -51,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vipMangementSystem/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="969">
               <caret line="95" column="19" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="19" />
               <folding>
                 <element signature="e#652#684#0" expanded="true" />
@@ -121,7 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>upload_i</find>
       <find>all.log</find>
       <find>cors</find>
       <find>CORS_ALLOW_HEADERS</find>
@@ -143,7 +142,6 @@
       <find>top</find>
       <find>type</find>
       <find>特价</find>
-      <find>wx</find>
       <find>delonsaleGood</find>
       <find>views_delonsale_good</find>
       <find>删除分类</find>
@@ -151,6 +149,8 @@
       <find>广告</find>
       <find>add</find>
       <find>good_info</find>
+      <find>wx</find>
+      <find>ssd</find>
     </findStrings>
     <replaceStrings>
       <replace>db = Mysql()</replace>
@@ -207,6 +207,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,7 +224,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,11 +391,12 @@
       <workItem from="1563676889476" duration="5952000" />
       <workItem from="1563888862522" duration="7672000" />
       <workItem from="1563973231599" duration="7466000" />
+      <workItem from="1567307846008" duration="6620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124811000" />
+    <option name="totallyTimeSpent" value="131431000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -408,9 +409,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49565217" visible="true" weight="0.23685667" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49565217" visible="true" weight="0.23962368" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5043478" side_tool="true" weight="0.20788912" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -594,6 +594,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vms/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="858" column="32" selection-start-line="858" selection-start-column="32" selection-end-line="858" selection-end-column="32" />
+          <folding>
+            <element signature="e#24#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vipMangementSystem/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="95" column="19" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="19" />
+          <folding>
+            <element signature="e#652#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vipMangementSystem/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2907">
@@ -631,26 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="87" selection-start-line="21" selection-start-column="87" selection-end-line="21" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vipMangementSystem/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="95" column="19" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="19" />
-          <folding>
-            <element signature="e#652#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vms/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="247" column="20" lean-forward="true" selection-start-line="246" selection-start-column="20" selection-end-line="247" selection-end-column="20" />
-          <folding>
-            <element signature="e#24#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
