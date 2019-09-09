@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : vms
+ Source Server         : 127.0.0.1
  Source Server Type    : MySQL
- Source Server Version : 50726
- Source Host           : localhost:3306
+ Source Server Version : 50727
+ Source Host           : 127.0.0.1:3306
  Source Schema         : vms
 
  Target Server Type    : MySQL
- Target Server Version : 50726
+ Target Server Version : 50727
  File Encoding         : 65001
 
- Date: 14/07/2019 23:29:05
+ Date: 10/09/2019 01:07:18
 */
 
 SET NAMES utf8mb4;
@@ -26,7 +26,7 @@ CREATE TABLE `ad`  (
   `info` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `atime` datetime(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 106 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 110 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of ad
@@ -48,6 +48,10 @@ INSERT INTO `ad` VALUES (102, '3', '2019-07-03 00:42:38');
 INSERT INTO `ad` VALUES (103, '4', '2019-07-03 00:43:18');
 INSERT INTO `ad` VALUES (104, '春季大酬宾，1元红包免费领取。快来点击查看吧！还在等什么！', '2019-07-03 00:43:34');
 INSERT INTO `ad` VALUES (105, '春季大酬宾，1元红包免费领取。快来点击查看吧！还在等什么！', '2019-07-03 00:44:14');
+INSERT INTO `ad` VALUES (106, '春季大酬宾，1元红包免费领取。快来点击查看吧！还在等什么！以下是上两周我们在社区收到的问题反馈、需求的处理进度，希望同大家一同打造小程序生态。', '2019-07-24 22:54:17');
+INSERT INTO `ad` VALUES (107, '1', '2019-07-24 23:12:20');
+INSERT INTO `ad` VALUES (108, '这是一个滚动的公告！', '2019-07-24 23:12:57');
+INSERT INTO `ad` VALUES (109, '温娜是个好女孩！！！', '2019-09-01 15:26:29');
 
 -- ----------------------------
 -- Table structure for good
@@ -65,37 +69,47 @@ CREATE TABLE `good`  (
   `img_urls` varchar(20000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `good_info` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 43 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 53 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of good
 -- ----------------------------
 INSERT INTO `good` VALUES (2, '雪碧', 1, 3.0, 2.0, '2018-08-09 23:33:44', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (4, '凉皮', 3, 7.0, 3.5, '2018-08-09 23:34:40', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (5, '雪花', 2, 3.0, 2.1, '2018-08-09 23:35:01', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (6, '黑啤', 2, 4.0, 2.8, '2018-08-09 23:35:15', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (7, '牛奶', 1, 8.0, 6.0, '2018-08-09 23:35:36', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (9, '自制酸梅汤', 1, 8.0, 1.0, '2018-08-09 23:53:02', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (10, '自制柳橙汁', 1, 8.0, 1.0, '2018-08-09 23:53:15', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (11, '自制橙汁', 1, 8.0, 1.0, '2018-08-09 23:53:27', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (14, '加多宝', 1, 5.5, 4.5, '2018-08-31 01:02:50', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (15, '红牛', 1, 6.0, 4.8, '2018-08-22 10:29:28', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (16, '茶π', 1, 6.0, 3.8, '2018-08-22 10:48:00', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (17, '阿萨姆', 1, 5.0, 3.0, '2018-09-02 23:26:56', 1, '../../images/icon/noimg.png', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg8KAR0a2AA1eBOVQX64032.png', NULL);
-INSERT INTO `good` VALUES (19, '15', 2, 12.0, 10.0, '2019-06-13 00:31:30', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (20, '12', 1, 22.0, 12.0, '2019-06-13 00:59:43', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (21, '22', 1, 12.0, 11.0, '2019-06-13 01:02:34', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (22, '223', 1, 222.0, 2.0, '2019-06-13 01:06:00', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (4, '凉皮', 3, 7.0, 0.0, '2018-08-09 23:34:40', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (5, '雪花', 2, 3.0, 0.0, '2018-08-09 23:35:01', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (6, '黑啤', 2, 4.0, 0.0, '2018-08-09 23:35:15', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (7, '牛奶', 1, 8.0, 0.0, '2018-08-09 23:35:36', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (9, '自制酸梅汤', 1, 8.0, 0.0, '2018-08-09 23:53:02', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (10, '自制柳橙汁', 1, 8.0, 2.0, '2018-08-09 23:53:15', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (11, '自制橙汁', 1, 8.0, 0.0, '2018-08-09 23:53:27', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (14, '加多宝', 1, 5.5, 0.0, '2018-08-31 01:02:50', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (15, '红牛', 1, 6.0, 0.0, '2018-08-22 10:29:28', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (16, '茶π', 1, 6.0, 0.0, '2018-08-22 10:48:00', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (17, '阿萨姆', 1, 5.0, 0.0, '2018-09-02 23:26:56', 1, '../../images/icon/noimg.png', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg8KAR0a2AA1eBOVQX64032.png', NULL);
+INSERT INTO `good` VALUES (19, '15', 2, 12.0, 0.0, '2019-06-13 00:31:30', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (20, '12', 1, 22.0, 0.0, '2019-06-13 00:59:43', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (21, '22', 1, 12.0, 0.0, '2019-06-13 01:02:34', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (22, '223', 1, 222.0, 0.0, '2019-06-13 01:06:00', 1, '../../images/icon/noimg.png', '', NULL);
 INSERT INTO `good` VALUES (23, '2223', 1, 12.0, 1.0, '2019-06-13 01:07:24', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (24, '222', 1, 31.0, 1.0, '2019-06-13 01:08:11', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (25, '22231', 1, 22.0, 2.0, '2019-06-13 01:11:32', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (32, '1222222', 1, 1222.0, 111.0, '2019-06-17 23:48:52', 1, '../../images/icon/noimg.png', '', NULL);
-INSERT INTO `good` VALUES (37, '英雄联盟', 1, 200.0, 100.0, '2019-06-18 01:46:56', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fCAewPZAAHOGYy0SIw332.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fSAb8G3AAHOGYy0SIw734.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0faAWM3bAA1eBOVQX64320.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fiAI8EbAAHOGYy0SIw419.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fqATDs_AA1eBOVQX64451.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fyAMXuYAAHOGYy0SIw968.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0f6ARxYKAAHOGYy0SIw221.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gGAKc08AA1eBOVQX64592.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gOAfoLaAA1eBOVQX64294.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gWAIpswAAHOGYy0SIw349.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0geASzsKAAHOGYy0SIw029.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gqAI2Z2AA1eBOVQX64675.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gyATAClAA1eBOVQX64791.png', 'YSL全新限量圣诞彩妆【金夜繁星限量彩妆盘】是时尚配件，更是一个收藏YSL女人所有美丽秘密的彩妆盘，拥有4色派对眼影色选：紫梅、璨金、古铜和金属玫瑰，搭配裸唇和女王艳红两款唇色，无论是优雅气质还是华丽气势都能驾驭！');
-INSERT INTO `good` VALUES (38, '马甲个', 3, 111.0, 11.0, '2019-06-23 14:47:18', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0PIHGAeDNPAA1eBOVQX64786.png', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0PIHWAV83XAAHOGYy0SIw715.jpg', NULL);
-INSERT INTO `good` VALUES (39, '美国对台军售哪些企业将被中国制裁美国对台军售，哪些企业将制裁', 3, 100.0, 10.0, '2019-06-25 23:30:00', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPFaAZIGWAAHOGYy0SIw141.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEKAGQqUAAHOGYy0SIw457.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEWAFRlvAAHOGYy0SIw162.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEeAQ9j2AAHOGYy0SIw838.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEqAIk2uAA1eBOVQX64769.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPE2AQ1N-AA1eBOVQX64456.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPE-AZMU6AAHOGYy0SIw079.jpg', 'YSL全新限量圣诞彩妆【金夜繁星限量彩妆盘】是时尚配件，更是一个收藏YSL女人所有美丽秘密的彩妆盘，拥有4色派对眼影色选：紫梅、璨金、古铜和金属玫瑰，搭配裸唇和女王艳红两款唇色，无论是优雅气质还是华丽气势都能驾驭！');
-INSERT INTO `good` VALUES (40, '赵信', 2, 111.0, 12.0, '2019-06-26 22:37:38', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyOAHv-aAAHOGYy0SIw365.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyeAdXDVAAHOGYy0SIw134.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyqABjA6AA1eBOVQX64805.png', NULL);
-INSERT INTO `good` VALUES (41, '你好', 1, 100.0, 20.0, '2019-06-26 22:40:10', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg76AaCAQAAHOGYy0SIw122.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg8KAR0a2AA1eBOVQX64032.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg8SAXRlwAAHOGYy0SIw388.jpg', NULL);
-INSERT INTO `good` VALUES (42, 'sada', 1, 100.0, 80.0, '2019-07-14 00:07:30', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0qAb2AYPAqAAHOGYy0SIw683.jpg', '', NULL);
+INSERT INTO `good` VALUES (24, '222', 1, 31.0, 22.0, '2019-06-13 01:08:11', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (25, '22231', 1, 22.0, 0.0, '2019-06-13 01:11:32', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (32, '1222222', 1, 1222.0, 0.0, '2019-06-17 23:48:52', 1, '../../images/icon/noimg.png', '', NULL);
+INSERT INTO `good` VALUES (37, '英雄联盟', 1, 200.0, 0.0, '2019-06-18 01:46:56', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fCAewPZAAHOGYy0SIw332.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fSAb8G3AAHOGYy0SIw734.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0faAWM3bAA1eBOVQX64320.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fiAI8EbAAHOGYy0SIw419.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fqATDs_AA1eBOVQX64451.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0fyAMXuYAAHOGYy0SIw968.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0f6ARxYKAAHOGYy0SIw221.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gGAKc08AA1eBOVQX64592.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gOAfoLaAA1eBOVQX64294.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gWAIpswAAHOGYy0SIw349.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0geASzsKAAHOGYy0SIw029.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gqAI2Z2AA1eBOVQX64675.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0H0gyATAClAA1eBOVQX64791.png', 'YSL全新限量圣诞彩妆【金夜繁星限量彩妆盘】是时尚配件，更是一个收藏YSL女人所有美丽秘密的彩妆盘，拥有4色派对眼影色选：紫梅、璨金、古铜和金属玫瑰，搭配裸唇和女王艳红两款唇色，无论是优雅气质还是华丽气势都能驾驭！');
+INSERT INTO `good` VALUES (38, '马甲个', 3, 111.0, 0.0, '2019-06-23 14:47:18', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0PIHGAeDNPAA1eBOVQX64786.png', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0PIHWAV83XAAHOGYy0SIw715.jpg', NULL);
+INSERT INTO `good` VALUES (39, '美国对台军售哪些企业将被中国制裁美国对台军售，哪些企业将制裁', 3, 100.0, 0.0, '2019-06-25 23:30:00', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPFaAZIGWAAHOGYy0SIw141.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEKAGQqUAAHOGYy0SIw457.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEWAFRlvAAHOGYy0SIw162.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEeAQ9j2AAHOGYy0SIw838.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPEqAIk2uAA1eBOVQX64769.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPE2AQ1N-AA1eBOVQX64456.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0SPE-AZMU6AAHOGYy0SIw079.jpg', 'YSL全新限量圣诞彩妆【金夜繁星限量彩妆盘】是时尚配件，更是一个收藏YSL女人所有美丽秘密的彩妆盘，拥有4色派对眼影色选：紫梅、璨金、古铜和金属玫瑰，搭配裸唇和女王艳红两款唇色，无论是优雅气质还是华丽气势都能驾驭！');
+INSERT INTO `good` VALUES (40, '赵信', 2, 111.0, 0.0, '2019-06-26 22:37:38', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyOAHv-aAAHOGYy0SIw365.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyeAdXDVAAHOGYy0SIw134.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0TgyqABjA6AA1eBOVQX64805.png', NULL);
+INSERT INTO `good` VALUES (41, '你好', 1, 100.0, 0.0, '2019-06-26 22:40:10', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg76AaCAQAAHOGYy0SIw122.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg8KAR0a2AA1eBOVQX64032.png,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0Tg8SAXRlwAAHOGYy0SIw388.jpg', NULL);
+INSERT INTO `good` VALUES (42, 'sada', 1, 100.0, 1.0, '2019-07-14 00:07:30', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0qAb2AYPAqAAHOGYy0SIw683.jpg', '', NULL);
+INSERT INTO `good` VALUES (43, '你好噜啦', 27, 12.0, 1.0, '2019-07-21 12:22:33', 1, 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV0z6ISANXtgAAHOGYy0SIw554.jpg', '', NULL);
+INSERT INTO `good` VALUES (44, '中华', 4, 15.0, 0.0, '2019-07-24 23:49:17', 1, 'http://127.0.0.1:9999/group1/M00/00/02/wKgCgV04feyAJERBAAHOGYy0SIw980.jpg', 'http://127.0.0.1:9999/group1/M00/00/01/wKgCgV04fdKAckC0AAHOGYy0SIw924.jpg,http://127.0.0.1:9999/group1/M00/00/01/wKgCgV04fdSAXCyDAAHOGYy0SIw057.jpg,http://127.0.0.1:9999/group1/M00/00/02/wKgCgV04fdaAR4GXAADfjsj9IGQ127.jpg,http://127.0.0.1:9999/group1/M00/00/02/wKgCgV04fdmAB35dAADfjsj9IGQ495.jpg,http://127.0.0.1:9999/group1/M00/00/02/wKgCgV04fd6ACNuFAADfjsj9IGQ367.jpg,http://127.0.0.1:9999/group1/M00/00/02/wKgCgV04feGAJqkgAADfjsj9IGQ226.jpg,http://127.0.0.1:9999/group1/M00/00/02/wKgCgV04feiAIIh2AADfjsj9IGQ629.jpg', NULL);
+INSERT INTO `good` VALUES (45, '玉溪', 2, 18.0, 16.0, '2019-07-24 23:53:20', 1, 'http://127.0.0.1:9999/group1/M00/00/02/wKgCgV04fuGAX6-AAAHOGYy0SIw041.jpg', 'http://127.0.0.1:9999/group1/M00/00/02/wKgCgV04fueAAerSAADfjsj9IGQ315.jpg', '玉溪的烟，很好～');
+INSERT INTO `good` VALUES (46, '1', 2, 111.0, 12.0, '2019-09-01 16:05:44', 1, 'http://127.0.0.1:9999/group1/M00/00/02/wKgCgV1re9GALGChAADfjsj9IGQ851.jpg', '', '');
+INSERT INTO `good` VALUES (47, '111', 2, 22.0, 12.0, '2019-09-01 16:05:56', 1, 'http://127.0.0.1:9999/group1/M00/00/02/wKgCgV1re-KAGt_BAADfjsj9IGQ516.jpg', '', '');
+INSERT INTO `good` VALUES (48, '1111', 2, 122.0, 2.0, '2019-09-01 16:06:26', 1, 'http://127.0.0.1:9999/group1/M00/00/02/wKgCgV1re_6ARdE4AADfjsj9IGQ860.jpg', '', '');
+INSERT INTO `good` VALUES (49, '11111', 2, 222.0, 2.0, '2019-09-01 16:06:53', 1, 'http://127.0.0.1:9999/group1/M00/00/02/wKgCgV1rfBqAf7VmAADfjsj9IGQ343.jpg', '', '');
+INSERT INTO `good` VALUES (50, '12111', 4, 1222.0, 12.0, '2019-09-01 16:07:11', 1, 'http://127.0.0.1:9999/group1/M00/00/02/wKgCgV1rfCqATH62AADfjsj9IGQ178.jpg', '', '');
+INSERT INTO `good` VALUES (51, '1232111', 17, 12.0, 1.0, '2019-09-01 16:07:30', 1, 'http://127.0.0.1:9999/group1/M00/00/02/wKgCgV1rfECAZg_oAADfjsj9IGQ729.jpg', '', '');
+INSERT INTO `good` VALUES (52, '2112312', 16, 1222.0, 0.0, '2019-09-01 16:12:28', 1, 'http://127.0.0.1:9999/group1/M00/00/02/wKgCgV1rfWqALsE5AADfjsj9IGQ250.jpg', '', '');
 
 -- ----------------------------
 -- Table structure for good_category
@@ -128,7 +142,6 @@ INSERT INTO `good_category` VALUES (23, '大牌彩妆', 16, NULL);
 INSERT INTO `good_category` VALUES (24, 'LLLL', 18, NULL);
 INSERT INTO `good_category` VALUES (25, 'LV$LV', 19, NULL);
 INSERT INTO `good_category` VALUES (26, 'LSSA', 20, NULL);
-INSERT INTO `good_category` VALUES (27, 'sOs1', 21, NULL);
 INSERT INTO `good_category` VALUES (28, 'SILAI', 22, NULL);
 INSERT INTO `good_category` VALUES (29, 'SUUIOO', 24, NULL);
 
@@ -255,7 +268,7 @@ CREATE TABLE `person_love`  (
   `good_id` int(11) NULL DEFAULT NULL,
   `add_time` datetime(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 63 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 67 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of person_love
@@ -268,14 +281,12 @@ INSERT INTO `person_love` VALUES (7, '74', 4, '2019-07-03 17:42:35');
 INSERT INTO `person_love` VALUES (8, '75', 37, '2019-07-03 17:42:46');
 INSERT INTO `person_love` VALUES (39, 'undefined', 2, '2019-07-14 22:43:18');
 INSERT INTO `person_love` VALUES (54, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 39, '2019-07-14 23:21:36');
-INSERT INTO `person_love` VALUES (55, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 2, '2019-07-14 23:26:20');
-INSERT INTO `person_love` VALUES (56, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 4, '2019-07-14 23:26:22');
 INSERT INTO `person_love` VALUES (57, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 5, '2019-07-14 23:26:25');
-INSERT INTO `person_love` VALUES (58, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 6, '2019-07-14 23:26:27');
-INSERT INTO `person_love` VALUES (59, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 7, '2019-07-14 23:26:30');
-INSERT INTO `person_love` VALUES (60, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 9, '2019-07-14 23:26:35');
-INSERT INTO `person_love` VALUES (61, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 14, '2019-07-14 23:26:39');
 INSERT INTO `person_love` VALUES (62, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 15, '2019-07-14 23:26:42');
+INSERT INTO `person_love` VALUES (63, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 2, '2019-07-24 01:00:49');
+INSERT INTO `person_love` VALUES (64, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 40, '2019-07-24 01:02:19');
+INSERT INTO `person_love` VALUES (65, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 43, '2019-07-24 21:11:46');
+INSERT INTO `person_love` VALUES (66, 'o4Cg449DdaqJADYe8Bc0vlBwZOQo', 10, '2019-07-24 21:41:24');
 
 -- ----------------------------
 -- Table structure for point_detail
@@ -332,7 +343,7 @@ CREATE TABLE `t_token`  (
   `token` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `time` datetime(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 169 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 192 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of t_token
@@ -431,6 +442,29 @@ INSERT INTO `t_token` VALUES (165, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJp
 INSERT INTO `t_token` VALUES (166, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjEzMDQ4MjYsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.gEz2LXc6UQ0mVIPG9BR2e55sjYlewLm65D9MoRW_daE', '2019-06-23 23:47:06');
 INSERT INTO `t_token` VALUES (167, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjEzMDQ5NDgsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.WlsOUBOaG7-O7YNxrt-cONCBrHY_iYR-M8F5jHVXrSc', '2019-06-23 23:50:48');
 INSERT INTO `t_token` VALUES (168, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjEzMDUxMDYsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.Su6ItLAPx_K8ryo0dhwCGQ_4r-8QcIRuY6fIBmg1O5E', '2019-06-23 23:52:26');
+INSERT INTO `t_token` VALUES (169, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM2ODA0MjIsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.T5ahbuv4ILtJqQMoIs2pQ1-AePiwKh_jndtfuxER7to', '2019-07-21 11:40:22');
+INSERT INTO `t_token` VALUES (170, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM2ODE4ODUsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.74mwNDKKx5B4e-NMvXfslF_4PbGJ2gVVVaPWrMCaOgw', '2019-07-21 12:04:45');
+INSERT INTO `t_token` VALUES (171, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM2ODI4MjAsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.3WEuOGJpTNTQnwEVKl8dNKP0y9nX-5VcSzD42yl5Ayw', '2019-07-21 12:20:20');
+INSERT INTO `t_token` VALUES (172, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM2ODM4NzAsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.zw-el_bCzrlQpIhB9y-DHDOm_5Fh38VyG7xuMrNK0dA', '2019-07-21 12:37:50');
+INSERT INTO `t_token` VALUES (173, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4ODkyNDEsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.B4vcO3gNmuzr6gZiXoXjuvRXxd8LTBOE-nRwxbShEZ4', '2019-07-23 21:40:41');
+INSERT INTO `t_token` VALUES (174, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTAxNTEsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.V4DHb5cFMHG-l9S_AnmQ6FiAan2xMUBPrBMmhkEBTN4', '2019-07-23 21:55:51');
+INSERT INTO `t_token` VALUES (175, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTA3NjksInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.WVis9ulGUYdTSoeJWtQFdUZWLl_DO_ttXYh6t77Z1Oo', '2019-07-23 22:06:09');
+INSERT INTO `t_token` VALUES (176, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTI3MzQsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.LibXpJ9etL2x7gUlO5HZ61xeZOuMMEA9vciWxzvaRAI', '2019-07-23 22:38:54');
+INSERT INTO `t_token` VALUES (177, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTI5NDIsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.u3-CdL6xCRoPyWMZF9o680rvinTOQMJlS0JtfSwCnWE', '2019-07-23 22:42:22');
+INSERT INTO `t_token` VALUES (178, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTMwNzcsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.eyIh3x0dYL9FGkQKa4gTcjdgfJummA58dzfH5x4YILo', '2019-07-23 22:44:37');
+INSERT INTO `t_token` VALUES (179, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTMxNDEsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.oMrStidU73TTX7eHy7QTUqOsZRna0cF6WghOwW-mB-w', '2019-07-23 22:45:41');
+INSERT INTO `t_token` VALUES (180, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTM0NDYsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.a9eL3fTtPwA697_v0ut1h9fDibProBm9snR4NHyeAOE', '2019-07-23 22:50:46');
+INSERT INTO `t_token` VALUES (181, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTM4NDQsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.EG7c8QdEI2SKHBgSVLrq_LSbwDzxmdZrx8l0-qHngOg', '2019-07-23 22:57:24');
+INSERT INTO `t_token` VALUES (182, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTQwMTcsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.qTaQXAqPEW2NHr87P3X5ftbTUiCJpX80aHedICoLtR0', '2019-07-23 23:00:17');
+INSERT INTO `t_token` VALUES (183, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTQxNzAsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.MYqrZkzZvOdkzjh7Yar569pMnhLD5u44BU4hKXwukS4', '2019-07-23 23:02:50');
+INSERT INTO `t_token` VALUES (184, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTQyMDIsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.Xzl63gTuqfBz2hUZZlhH15LKbaf7JXhQ8nJgKWnOXq8', '2019-07-23 23:03:22');
+INSERT INTO `t_token` VALUES (185, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTUyMDgsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.cbZ-ZTC3r0yyM_4wUlo2rWq-sa5JcXnvJARCIW8y-BQ', '2019-07-23 23:20:08');
+INSERT INTO `t_token` VALUES (186, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTYyMjMsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.N6JSs19dFx5ZAgnXpwLYVk6cjODpMPHNHStlk5Fw2E0', '2019-07-23 23:37:03');
+INSERT INTO `t_token` VALUES (187, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTYyNjYsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.bgYxTjMww3Ar8c97IVOTYuPTFa7Ww8vx1KSVfa4ppdU', '2019-07-23 23:37:46');
+INSERT INTO `t_token` VALUES (188, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM4OTcxNzMsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.RUZNt0Yc6hjTGOtyZBoGeo2u2EuySZWMh3EV-k2IwhM', '2019-07-23 23:52:53');
+INSERT INTO `t_token` VALUES (189, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM5NzYwMzksInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.08adX8xG_8SJVdms4dA6ZccYixMsX4rOvh69dU3opFg', '2019-07-24 21:47:19');
+INSERT INTO `t_token` VALUES (190, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM5ODE4MzUsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.oh2IJsOhAZoHg9NOtOC02n5IfT0eLOGhwKTHHsdVTug', '2019-07-24 23:23:55');
+INSERT INTO `t_token` VALUES (191, 2, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtb3RoYW50eS5jb20iLCJpYXQiOjE1NjM5ODIzOTEsInVzZXJuYW1lIjoid24iLCJzY29wZXMiOlsib3BlbiJdfQ.JzMsgDxLjbn2v4IGJ1AsEeGHKiFxCD0QDkpc2MnNbr4', '2019-07-24 23:33:11');
 
 -- ----------------------------
 -- Table structure for vip_order

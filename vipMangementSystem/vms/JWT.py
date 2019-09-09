@@ -45,7 +45,7 @@ class JWT(object):
 
     def verify_bearer_token(self):
         def _deco(func):
-            debug = True
+            debug = False
             @wraps(func)
             def __deco(request, *para, **kw):
                 if debug:
